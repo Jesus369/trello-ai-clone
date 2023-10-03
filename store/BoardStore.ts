@@ -13,7 +13,7 @@ interface BoardState {
   setSearchString: (searchString: string) => void;
   addTask: (todo: string, columnId: TypedColumn, image?: File | null) => void;
   deleteTask: (taskIndex: number, todo: Todo, id: TypedColumn) => void;
-  newTaskInput: string | null;
+  newTaskInput: string;
   setNewTaskInput: (input: string) => void;
   newTaskType: TypedColumn;
   setNewTaskType: (columnId: TypedColumn) => void;

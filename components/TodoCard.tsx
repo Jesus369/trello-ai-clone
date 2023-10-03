@@ -7,7 +7,7 @@ import {
 } from "react-beautiful-dnd";
 import { useBoardStore } from "@/store/BoardStore";
 import { useEffect, useState } from "react";
-import getUrl from "@/lib/getURL";
+import getUrl from "@/lib/getUrl";
 import Image from "next/image";
 
 type Props = {
