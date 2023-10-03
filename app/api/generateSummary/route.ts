@@ -2,9 +2,7 @@ import openai from "@/openai";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: Request){
-    console.log("hello world")
     const {todos} = await request.json()
-    console.log(todos)
 
     // Communicate with OpenAI GPT
     const response = await openai.chat.completions.create({
